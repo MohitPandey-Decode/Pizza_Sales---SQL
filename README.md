@@ -256,15 +256,17 @@ FROM (
         ON pizzas.pizza_id = order_details.pizza_id
     GROUP BY pizza_types.name, pizza_types.category
 ) ranked_pizzas
-W
+WHERE rnk <= 3;
+
+---
 
 ## Full Project Report (PDF)
 
 The complete project report with all SQL queries and outputs is available here:
 
-👉 **LinkedIn PDF Post:** _[Paste your LinkedIn PDF link here]_
+👉 **LinkedIn Project Post:** https://www.linkedin.com/posts/mohit-pandey-data-science_pizzahutsales-sql-activity-7407425146464092160-9r6q
 
-(GitHub may not render the PDF preview correctly. Please open the link directly.)
+> Note: LinkedIn sometimes restricts PDF preview access for non-logged-in users. Please open the link while logged into LinkedIn to view the full PDF.
 
 ---
 
@@ -287,7 +289,7 @@ The complete project report with all SQL queries and outputs is available here:
 
 Mohit Pandey
 
---- PROJECT LINK :- https://www.linkedin.com/posts/mohit-pandey-data-science_pizzahutsales-sql-activity-7407425146464092160-9r6q?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEL5IsUBQfL-_pRrBCB5cmrWX5YXCwsfYqE
+---
 
 If you are reviewing this project for hiring or evaluation purposes, feel free to check the full PDF report linked above.
 
